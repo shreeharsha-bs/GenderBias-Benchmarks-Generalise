@@ -17,7 +17,7 @@
             
             <div class="authors">
                 <!-- Authors will be added here -->
-                <div class="author-placeholder">Authors: [To be updated]</div>
+                <div class="author-placeholder">Authors: Shree Harsha Bokkahalli Satish, Gustav Eje Henter, Éva Székely</div>
             </div>
             
             <div class="links">
@@ -40,7 +40,9 @@
                 <h2 class="section-title">Abstract</h2>
                 <div class="abstract-content">
                     <p>
-                        [Abstract placeholder - This section will contain the paper abstract describing the research on gender bias benchmarks in SpeechLLMs and their generalization capabilities.]
+                        Recent work in benchmarking bias and fairness in speech large language models (SpeechLLMs) has relied heavily on multiple-choice question answering (MCQA) formats. The model is tasked to choose between stereotypical, anti-stereotypical, or neutral/irrelevant answers given an input speech prompt and an optional text prompt. Such MCQA benchmarks implicitly assume that model performance is consistent across other MCQA tasks, voices, and other task formats such as more realistic, long-form evaluations. In this paper, we probe that assumption.
+
+                        We fine-tune three SpeechLLMs using LoRA adapters to induce specific MCQA behaviours: preference for stereotypical, anti-stereotypical, or neutral/uncertain answers. We then evaluate whether these behaviours generalise to another, distinct MCQA benchmark, and more critically to long-form, creative generation tasks. %We further test whether a recent MCQA bias-mitigation method shows similar mitigation effects in long-form outputs. Our results show that performance on MCQA bias benchmarks fails to reliably predict performances across other MCQA benchmarks, and more importantly across long-form tasks. We conclude that current MCQA bias benchmarks show limited evidence of cross-task generalisation in the speech domain, and also propose an evaluation suite for measuring behaviour transferability in future models and benchmarks. 
                     </p>
                 </div>
             </div>
