@@ -252,16 +252,78 @@ function handlePDFUpload(plotType, pdfUrl) {
     if (placeholder) {
         // Replace placeholder with actual PDF viewer or download link
         placeholder.innerHTML = `
-            <iframe src="${pdfUrl}" width="100%" height="400px" style="border: none;"></iframe>
-            <div style="margin-top: 10px;">
+            <iframe src="${pdfUrl}" width="100%" height="500px" style="border: none;"></iframe>
+            <div class="plot-controls">
                 <a href="${pdfUrl}" download class="download-btn">
                     <i class="fas fa-download"></i> Download PDF
                 </a>
+                <button class="fullscreen-btn" onclick="openFullscreen('${pdfUrl}')">
+                    <i class="fas fa-expand"></i> Full Screen
+                </button>
             </div>
         `;
         placeholder.style.animation = 'none';
+        placeholder.className = 'pdf-viewer';
     }
 }
+
+// Open PDF in fullscreen
+function openFullscreen(pdfUrl) {
+    // Create fullscreen modal
+    const modal = document.createElement('div');
+    modal.id = 'pdf-modal';
+    modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 10000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    `;
+    
+    modal.innerHTML = `
+        <div style="position: relative; width: 95%; height: 95%; background: white; border-radius: 8px; overflow: hidden;">
+            <button onclick="closeFullscreen()" style="position: absolute; top: 10px; right: 10px; z-index: 10001; background: #e53e3e; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; font-size: 16px;">
+                <i class="fas fa-times"></i> Close
+            </button>
+            <iframe src="${pdfUrl}" width="100%" height="100%" style="border: none;"></iframe>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Prevent scrolling
+    document.body.style.overflow = 'hidden';
+}
+
+// Close fullscreen modal
+function closeFullscreen() {
+    const modal = document.getElementById('pdf-modal');
+    if (modal) {
+        modal.remove();
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(e) {
+    const modal = document.getElementById('pdf-modal');
+    if (modal && e.target === modal) {
+        closeFullscreen();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeFullscreen();
+    }
+});
 
 // Initialize PDF placeholder interactions when DOM is loaded
 document.addEventListener('DOMContentLoaded', addPDFPlaceholderInteraction);

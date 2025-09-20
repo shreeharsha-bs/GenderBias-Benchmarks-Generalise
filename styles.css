@@ -228,6 +228,49 @@ body {
     border-bottom: 1px solid #e2e8f0;
 }
 
+/* PDF viewer styles */
+.pdf-viewer {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pdf-viewer iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    display: block;
+}
+
+.plot-controls {
+    padding: 15px;
+    background: #f8f9fa;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fullscreen-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fullscreen-btn:hover {
+    background: #38a169;
+}
+
 .pdf-placeholder {
     padding: 40px 20px;
     text-align: center;
@@ -541,6 +584,16 @@ body {
     
     .metrics {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    
+    .pdf-viewer iframe {
+        height: 300px;
+    }
+    
+    .plot-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
     }
 }
 

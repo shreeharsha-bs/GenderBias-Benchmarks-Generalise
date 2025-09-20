@@ -93,33 +93,51 @@
                     <h3>Experimental Results</h3>
                     <div class="plots-grid">
                         <div class="plot-container">
-                            <h4>Gender Bias Heatmap Analysis</h4>
-                            <div class="pdf-placeholder" data-plot="gender-bias-heatmap">
-                                <i class="fas fa-file-pdf"></i>
-                                <p>Heatmap showing bias scores across different models</p>
-                                <p class="placeholder-text">Female vs Male performance across emotion, STEM, leadership, and achievement dimensions</p>
-                                <div class="plot-preview">
-                                    <div class="heatmap-preview">
-                                        <div class="model-row">
-                                            <span class="model-name">Qwen2 Audio</span>
-                                            <div class="score-grid">
-                                                <div class="score female">3.40</div>
-                                                <div class="score male">3.89</div>
-                                            </div>
-                                        </div>
-                                        <div class="model-row">
-                                            <span class="model-name">LLaMA Omni</span>
-                                            <div class="score-grid">
-                                                <div class="score female">3.60</div>
-                                                <div class="score male">4.55</div>
-                                            </div>
-                                        </div>
-                                        <p class="preview-note">Click to view full heatmap when available</p>
-                                    </div>
+                            <h4>First Dimension Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="first-dimension">
+                                <iframe src="assets/long-form_plots/heatmap_first_dimensions_differences_AS.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/long-form_plots/heatmap_first_dimensions_differences_AS.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/long-form_plots/heatmap_first_dimensions_differences_AS.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         
+                        <div class="plot-container">
+                            <h4>Second Dimension Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="second-dimension">
+                                <iframe src="assets/long-form_plots/heatmap_second_dimensions_differences_AS.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/long-form_plots/heatmap_second_dimensions_differences_AS.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/long-form_plots/heatmap_second_dimensions_differences_AS.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Third Dimension Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="third-dimension">
+                                <iframe src="assets/long-form_plots/heatmap_third_dimensions_differences_AS.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/long-form_plots/heatmap_third_dimensions_differences_AS.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/long-form_plots/heatmap_third_dimensions_differences_AS.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Placeholders for 6 additional plots -->
                         <div class="plot-container">
                             <h4>Cross-Benchmark Performance</h4>
                             <div class="pdf-placeholder" data-plot="benchmark-comparison">
@@ -146,12 +164,39 @@
                                 <p class="placeholder-text">Before and after fine-tuning performance comparison</p>
                             </div>
                         </div>
+                        
+                        <div class="plot-container">
+                            <h4>Model Comparison Analysis</h4>
+                            <div class="pdf-placeholder" data-plot="model-comparison">
+                                <i class="fas fa-file-pdf"></i>
+                                <p>Comparative analysis across different SpeechLLM models</p>
+                                <p class="placeholder-text">Performance metrics and bias patterns comparison</p>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Bias Mitigation Results</h4>
+                            <div class="pdf-placeholder" data-plot="bias-mitigation">
+                                <i class="fas fa-file-pdf"></i>
+                                <p>Effectiveness of bias mitigation strategies</p>
+                                <p class="placeholder-text">Analysis of intervention methods and their impact</p>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Long-form Evaluation Outcomes</h4>
+                            <div class="pdf-placeholder" data-plot="longform-outcomes">
+                                <i class="fas fa-file-pdf"></i>
+                                <p>Results from creative generation and long-form tasks</p>
+                                <p class="placeholder-text">Generalization patterns in unrestricted generation</p>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="plots-upload-info">
                         <div class="upload-notice">
                             <i class="fas fa-info-circle"></i>
-                            <p><strong>PDF Plots Coming Soon:</strong> Detailed visualization plots will be uploaded here. The plots will include comprehensive heatmaps similar to the preview above, showing gender bias patterns across different models, evaluation dimensions, and voice characteristics.</p>
+                            <p><strong>Additional Plots Coming Soon:</strong> Six more detailed visualization plots will be uploaded here. All plots show comprehensive bias analysis across different models, evaluation dimensions, and voice characteristics similar to the heatmaps above.</p>
                         </div>
                     </div>
                 </div>
@@ -227,8 +272,8 @@
                                 <i class="fas fa-database"></i>
                             </div>
                             <div class="code-info">
-                                <h3>MCQA Long-form Dataset</h3>
-                                <p>Multi-choice QA and long-form evaluation datasets with TTS outputs</p>
+                                <h3>SAGE-MCQA & SAGE-LF Datasets</h3>
+                                <p>SAGE Multiple-Choice QA and Long-Form evaluation datasets with TTS outputs</p>
                                 <button class="download-btn" data-folder="assets/datasets">
                                     <i class="fas fa-download"></i> Download Datasets
                                 </button>
