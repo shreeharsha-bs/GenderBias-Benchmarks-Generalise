@@ -191,6 +191,13 @@ body {
     font-weight: 500;
 }
 
+.metric-download {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
 /* Plots section */
 .plots-section {
     margin-top: 60px;
