@@ -237,6 +237,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pdf-placeholder:hover {
+    background: #f0f0f0;
 }
 
 .pdf-placeholder i {
@@ -253,6 +259,116 @@ body {
 .placeholder-text {
     font-style: italic;
     font-size: 0.9rem;
+}
+
+/* Heatmap preview styles */
+.plot-preview {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.heatmap-preview {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
+}
+
+.model-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.model-name {
+    font-weight: 600;
+    min-width: 100px;
+    color: #2d3748;
+    font-size: 0.75rem;
+}
+
+.score-grid {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.score {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.7rem;
+    min-width: 35px;
+    text-align: center;
+}
+
+.score.female {
+    background: #fbb6ce;
+    color: #702459;
+}
+
+.score.male {
+    background: #bee3f8;
+    color: #2a4365;
+}
+
+.preview-note {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Datasets section */
+.datasets-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.datasets-section h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2d3748;
+    text-align: center;
+}
+
+/* Upload info styles */
+.plots-upload-info {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.upload-notice {
+    background: linear-gradient(135deg, #e6fffa 0%, #f0fff4 100%);
+    border: 1px solid #38b2ac;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.upload-notice i {
+    color: #38b2ac;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.upload-notice p {
+    margin: 0;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.upload-notice strong {
+    color: #38b2ac;
 }
 
 /* Code section */

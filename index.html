@@ -93,39 +93,65 @@
                     <h3>Experimental Results</h3>
                     <div class="plots-grid">
                         <div class="plot-container">
-                            <h4>Gender Bias Analysis</h4>
-                            <div class="pdf-placeholder">
+                            <h4>Gender Bias Heatmap Analysis</h4>
+                            <div class="pdf-placeholder" data-plot="gender-bias-heatmap">
                                 <i class="fas fa-file-pdf"></i>
-                                <p>PDF Plot Placeholder</p>
-                                <p class="placeholder-text">Gender bias comparison across models</p>
+                                <p>Heatmap showing bias scores across different models</p>
+                                <p class="placeholder-text">Female vs Male performance across emotion, STEM, leadership, and achievement dimensions</p>
+                                <div class="plot-preview">
+                                    <div class="heatmap-preview">
+                                        <div class="model-row">
+                                            <span class="model-name">Qwen2 Audio</span>
+                                            <div class="score-grid">
+                                                <div class="score female">3.40</div>
+                                                <div class="score male">3.89</div>
+                                            </div>
+                                        </div>
+                                        <div class="model-row">
+                                            <span class="model-name">LLaMA Omni</span>
+                                            <div class="score-grid">
+                                                <div class="score female">3.60</div>
+                                                <div class="score male">4.55</div>
+                                            </div>
+                                        </div>
+                                        <p class="preview-note">Click to view full heatmap when available</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>Benchmark Generalization</h4>
-                            <div class="pdf-placeholder">
+                            <h4>Cross-Benchmark Performance</h4>
+                            <div class="pdf-placeholder" data-plot="benchmark-comparison">
                                 <i class="fas fa-file-pdf"></i>
-                                <p>PDF Plot Placeholder</p>
-                                <p class="placeholder-text">Cross-benchmark performance analysis</p>
+                                <p>Generalization across different evaluation benchmarks</p>
+                                <p class="placeholder-text">Performance comparison between MCQA and long-form evaluation tasks</p>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>Model Performance Comparison</h4>
-                            <div class="pdf-placeholder">
+                            <h4>Voice Gender Impact Analysis</h4>
+                            <div class="pdf-placeholder" data-plot="voice-impact">
                                 <i class="fas fa-file-pdf"></i>
-                                <p>PDF Plot Placeholder</p>
-                                <p class="placeholder-text">Comparative analysis of SpeechLLM models</p>
+                                <p>Impact of voice gender on model responses</p>
+                                <p class="placeholder-text">Analysis across different TTS voices and gender presentations</p>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>SAGE Evaluation Results</h4>
-                            <div class="pdf-placeholder">
+                            <h4>Fine-tuning Effects</h4>
+                            <div class="pdf-placeholder" data-plot="finetuning-effects">
                                 <i class="fas fa-file-pdf"></i>
-                                <p>PDF Plot Placeholder</p>
-                                <p class="placeholder-text">SAGE evaluation suite outcomes</p>
+                                <p>Impact of bias-aware fine-tuning on model behavior</p>
+                                <p class="placeholder-text">Before and after fine-tuning performance comparison</p>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="plots-upload-info">
+                        <div class="upload-notice">
+                            <i class="fas fa-info-circle"></i>
+                            <p><strong>PDF Plots Coming Soon:</strong> Detailed visualization plots will be uploaded here. The plots will include comprehensive heatmaps similar to the preview above, showing gender bias patterns across different models, evaluation dimensions, and voice characteristics.</p>
                         </div>
                     </div>
                 </div>
@@ -145,24 +171,24 @@
                             <i class="fab fa-python"></i>
                         </div>
                         <div class="code-info">
-                            <h3>Evaluation Scripts</h3>
-                            <p>Python scripts for bias evaluation and benchmarking</p>
-                            <a href="assets/code/evaluation_scripts_README.md" class="download-btn" data-file="evaluation_scripts_README.md" target="_blank">
-                                <i class="fas fa-download"></i> Download
-                            </a>
+                            <h3>Fine-tuning Scripts</h3>
+                            <p>Scripts and configurations for fine-tuning LLaMA-Omni and Qwen2 models</p>
+                            <button class="download-btn" data-folder="assets/code/fine-tuning">
+                                <i class="fas fa-download"></i> Download Fine-tuning Code
+                            </button>
                         </div>
                     </div>
                     
                     <div class="code-item">
                         <div class="code-icon">
-                            <i class="fas fa-database"></i>
+                            <i class="fas fa-microphone"></i>
                         </div>
                         <div class="code-info">
-                            <h3>SAGE Evaluation Suite</h3>
-                            <p>Complete evaluation framework and datasets</p>
-                            <a href="assets/code/sage_suite_README.md" class="download-btn" data-file="sage_suite_README.md" target="_blank">
-                                <i class="fas fa-download"></i> Download
-                            </a>
+                            <h3>Inference Scripts</h3>
+                            <p>Inference scripts for LLaMA-Omni, Qwen2, and SAGE evaluation</p>
+                            <button class="download-btn" data-folder="assets/code/inference">
+                                <i class="fas fa-download"></i> Download Inference Code
+                            </button>
                         </div>
                     </div>
                     
@@ -171,24 +197,68 @@
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div class="code-info">
-                            <h3>Analysis Code</h3>
-                            <p>Other Code for FT and plots</p>
-                            <a href="assets/code/analysis_notebooks_README.md" class="download-btn" data-file="analysis_notebooks_README.md" target="_blank">
-                                <i class="fas fa-download"></i> Download
-                            </a>
+                            <h3>Long-form Evaluation</h3>
+                            <p>Scripts for evaluating long-form generation tasks</p>
+                            <button class="download-btn" data-folder="assets/code/long-form">
+                                <i class="fas fa-download"></i> Download Evaluation Code
+                            </button>
                         </div>
                     </div>
                     
                     <div class="code-item">
                         <div class="code-icon">
-                            <i class="fas fa-cog"></i>
+                            <i class="fas fa-database"></i>
                         </div>
                         <div class="code-info">
-                            <h3>Model Configurations</h3>
-                            <p>Configuration files and model specifications</p>
-                            <a href="assets/code/model_configs_README.md" class="download-btn" data-file="model_configs_README.md" target="_blank">
-                                <i class="fas fa-download"></i> Download
-                            </a>
+                            <h3>Complete Code Package</h3>
+                            <p>Download all code and scripts in one package</p>
+                            <button class="download-btn" data-folder="assets/code">
+                                <i class="fas fa-download"></i> Download All Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="datasets-section">
+                    <h3>Datasets & Resources</h3>
+                    <div class="code-grid">
+                        <div class="code-item">
+                            <div class="code-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="code-info">
+                                <h3>MCQA Long-form Dataset</h3>
+                                <p>Multi-choice QA and long-form evaluation datasets with TTS outputs</p>
+                                <button class="download-btn" data-folder="assets/datasets">
+                                    <i class="fas fa-download"></i> Download Datasets
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="code-item">
+                            <div class="code-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="code-info">
+                                <h3>Results & Analysis</h3>
+                                <p>Experimental results and analysis files</p>
+                                <button class="download-btn" data-folder="assets/results">
+                                    <i class="fas fa-download"></i> Download Results
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="code-item">
+                            <div class="code-icon">
+                                <i class="fas fa-archive"></i>
+                            </div>
+                            <div class="code-info">
+                                <h3>Complete Package</h3>
+                                <p>Download everything: code, datasets, and results</p>
+                                <button class="download-btn" data-folder="assets">
+                                    <i class="fas fa-download"></i> Download Complete Package
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

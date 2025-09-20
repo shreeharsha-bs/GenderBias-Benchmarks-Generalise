@@ -40,6 +40,42 @@ function copyToClipboard() {
     });
 }
 
+// Download folder function
+async function downloadFolder(folderPath) {
+    try {
+        showNotification(`Preparing download for ${folderPath}...`, 'info');
+        
+        // For GitHub Pages or static hosting, we need to use a zip file approach
+        // Since we can't dynamically zip folders, we'll provide a download link to the GitHub repository
+        const repoUrl = 'https://github.com/shreeharsha-bs/GenderBias-Benchmarks-Generalize';
+        const zipUrl = `${repoUrl}/archive/refs/heads/main.zip`;
+        
+        // Create a temporary link to download the zip
+        const link = document.createElement('a');
+        link.href = zipUrl;
+        link.download = 'GenderBias-Benchmarks-Generalize.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        showNotification(`Download started! You can extract the specific folder: ${folderPath}`, 'success');
+        
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification('Download failed. Please try again or visit the GitHub repository.', 'error');
+    }
+}
+
+// Alternative individual file download function
+function downloadFile(filePath, fileName) {
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 // Handle download buttons
 document.addEventListener('DOMContentLoaded', function() {
     const downloadButtons = document.querySelectorAll('.download-btn');
@@ -47,16 +83,12 @@ document.addEventListener('DOMContentLoaded', function() {
     downloadButtons.forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
-            const fileName = this.getAttribute('data-file');
+            const folderPath = this.getAttribute('data-folder');
             
-            // Show download notification
-            showNotification(`Download will start soon: ${fileName}`, 'info');
-            
-            // In a real implementation, this would trigger the actual download
-            // For now, we'll just show a placeholder message
-            setTimeout(() => {
-                showNotification(`${fileName} - File will be available when uploaded to the repository`, 'warning');
-            }, 1000);
+            if (folderPath) {
+                // Create a download for the folder
+                downloadFolder(folderPath);
+            }
         });
     });
     
@@ -114,7 +146,7 @@ function showNotification(message, type = 'info') {
     notification.className = `notification notification-${type}`;
     notification.innerHTML = `
         <div class="notification-content">
-            <i class="fas fa-${type === 'info' ? 'info-circle' : type === 'warning' ? 'exclamation-triangle' : 'check-circle'}"></i>
+            <i class="fas fa-${type === 'info' ? 'info-circle' : type === 'warning' ? 'exclamation-triangle' : type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'check-circle'}"></i>
             <span>${message}</span>
             <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
                 <i class="fas fa-times"></i>
@@ -133,7 +165,7 @@ function showNotification(message, type = 'info') {
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            border-left: 4px solid ${type === 'info' ? '#667eea' : type === 'warning' ? '#ed8936' : '#48bb78'};
+            border-left: 4px solid ${type === 'info' ? '#667eea' : type === 'warning' ? '#ed8936' : type === 'success' ? '#48bb78' : type === 'error' ? '#e53e3e' : '#48bb78'};
             animation: slideIn 0.3s ease;
         }
         
@@ -145,7 +177,7 @@ function showNotification(message, type = 'info') {
         }
         
         .notification i:first-child {
-            color: ${type === 'info' ? '#667eea' : type === 'warning' ? '#ed8936' : '#48bb78'};
+            color: ${type === 'info' ? '#667eea' : type === 'warning' ? '#ed8936' : type === 'success' ? '#48bb78' : type === 'error' ? '#e53e3e' : '#48bb78'};
         }
         
         .notification-close {
@@ -193,7 +225,14 @@ function addPDFPlaceholderInteraction() {
     pdfPlaceholders.forEach(placeholder => {
         placeholder.style.cursor = 'pointer';
         placeholder.addEventListener('click', function() {
-            showNotification('PDF plots will be available when uploaded to the repository', 'info');
+            const plotType = this.getAttribute('data-plot');
+            const plotTitle = this.closest('.plot-container').querySelector('h4').textContent;
+            
+            if (plotType) {
+                showNotification(`${plotTitle} - PDF plot will be available when uploaded to the repository`, 'info');
+            } else {
+                showNotification('PDF plots will be available when uploaded to the repository', 'info');
+            }
         });
         
         placeholder.addEventListener('mouseenter', function() {
@@ -205,6 +244,23 @@ function addPDFPlaceholderInteraction() {
             this.style.transform = 'scale(1)';
         });
     });
+}
+
+// Function to handle future PDF uploads
+function handlePDFUpload(plotType, pdfUrl) {
+    const placeholder = document.querySelector(`[data-plot="${plotType}"]`);
+    if (placeholder) {
+        // Replace placeholder with actual PDF viewer or download link
+        placeholder.innerHTML = `
+            <iframe src="${pdfUrl}" width="100%" height="400px" style="border: none;"></iframe>
+            <div style="margin-top: 10px;">
+                <a href="${pdfUrl}" download class="download-btn">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        `;
+        placeholder.style.animation = 'none';
+    }
 }
 
 // Initialize PDF placeholder interactions when DOM is loaded

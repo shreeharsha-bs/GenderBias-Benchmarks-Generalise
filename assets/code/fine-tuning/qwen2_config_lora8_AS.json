@@ -1,0 +1,7 @@
+{
+    "output_dir": "qwen_lora8_anti_FT",
+    "lora_rank": 8,
+    "dataset": "train_anti.jsonl",
+    "val_dataset": "validation_anti.jsonl",
+    "model": "Qwen/Qwen2-Audio-7B-Instruct"
+}

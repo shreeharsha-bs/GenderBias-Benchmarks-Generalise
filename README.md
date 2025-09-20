@@ -13,47 +13,8 @@ This repository hosts a GitHub Pages website showcasing our research. The websit
 
 ### Website Features
 
-- 📊 **Results Dashboard**: Interactive metrics display with placeholder for real data
-- 📈 **Plot Gallery**: Four placeholder sections for PDF research plots
+- 📊 **Results ***: MCQA and long form results
 - 💻 **Code Repository**: Organized download links for different code components
-- 📝 **Citation Tools**: One-click citation copying
-- 📱 **Responsive Design**: Works on desktop and mobile devices
+For LTU_AS we use the code available in the original repository for both inference and fine-tuning.
 
 ## 🚀 Getting Started
-
-### Viewing the Website
-
-The website is automatically deployed via GitHub Pages. Once enabled, it will be available at:
-`https://shreeharsha-bs.github.io/GenderBias-Benchmarks-Generalize/`
-
-### Local Development
-
-To run the website locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/shreeharsha-bs/GenderBias-Benchmarks-Generalize.git
-cd GenderBias-Benchmarks-Generalize
-
-# Start a local web server
-python3 -m http.server 8000
-
-# Open in browser
-open http://localhost:8000
-```
-
-## 📁 Repository Structure
-
-```
-├── index.html              # Main website page
-├── styles.css              # Website styling
-├── script.js               # Interactive functionality
-├── assets/
-│   ├── pdfs/               # PDF plots (to be added)
-│   ├── code/               # Code documentation
-│   └── images/             # Website images
-├── .github/
-│   └── workflows/
-│       └── pages.yml       # GitHub Pages deployment
-└── README.md               # This file
-```

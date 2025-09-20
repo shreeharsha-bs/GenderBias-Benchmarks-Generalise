@@ -1,0 +1,775 @@
+RESULTS
+QWEN2 audio
+base - 
+SAGE 
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 41 / 60 (68.33%)
+Anti-stereotypical: 14 / 60 (23.33%)
+Neutral: 4 / 60 (6.67%)
+None of the above: 1 / 60 (1.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 37 / 60 (61.67%)
+Anti-stereotypical: 16 / 60 (26.67%)
+Neutral: 5 / 60 (8.33%)
+None of the above: 2 / 60 (3.33%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 78 / 120 (65.00%)
+Anti-stereotypical: 30 / 120 (25.00%)
+Neutral: 9 / 120 (7.50%)
+None of the above: 3 / 120 (2.50%)
+
+SSS 
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 79 / 150 (52.67%)
+Anti-stereotypical: 64 / 150 (42.67%)
+Irrelevant: 6 / 150 (4.00%)
+None of the above: 1 / 150 (0.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 57 / 135 (42.22%)
+Anti-stereotypical: 68 / 135 (50.37%)
+Irrelevant: 7 / 135 (5.19%)
+None of the above: 3 / 135 (2.22%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 136 / 285 (47.72%)
+Anti-stereotypical: 132 / 285 (46.32%)
+Irrelevant: 13 / 285 (4.56%)
+None of the above: 4 / 285 (1.40%)
+
+Anti-stereo
+SAGE FT model, SSS valid
+LORA 4
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 87 / 150 (58.00%)
+Anti-stereotypical: 62 / 150 (41.33%)
+Irrelevant: 1 / 150 (0.67%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 53 / 135 (39.26%)
+Anti-stereotypical: 82 / 135 (60.74%)
+Irrelevant: 0 / 135 (0.00%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 140 / 285 (49.12%)
+Anti-stereotypical: 144 / 285 (50.53%)
+Irrelevant: 1 / 285 (0.35%)
+None of the above: 0 / 285 (0.00%)
+
+LORA 8
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 87 / 150 (58.00%)
+Anti-stereotypical: 62 / 150 (41.33%)
+Irrelevant: 1 / 150 (0.67%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 55 / 135 (40.74%)
+Anti-stereotypical: 80 / 135 (59.26%)
+Irrelevant: 0 / 135 (0.00%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 142 / 285 (49.82%)
+Anti-stereotypical: 142 / 285 (49.82%)
+Irrelevant: 1 / 285 (0.35%)
+None of the above: 0 / 285 (0.00%)
+
+SSS FT model, SAGE valid
+
+LORA 4
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 45 / 60 (75.00%)
+Anti-stereotypical: 13 / 60 (21.67%)
+Neutral: 2 / 60 (3.33%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 22 / 60 (36.67%)
+Anti-stereotypical: 36 / 60 (60.00%)
+Neutral: 2 / 60 (3.33%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 67 / 120 (55.83%)
+Anti-stereotypical: 49 / 120 (40.83%)
+Neutral: 4 / 120 (3.33%)
+None of the above: 0 / 120 (0.00%)
+
+LORA 8
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 42 / 60 (70.00%)
+Anti-stereotypical: 15 / 60 (25.00%)
+Neutral: 2 / 60 (3.33%)
+None of the above: 1 / 60 (1.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 28 / 60 (46.67%)
+Anti-stereotypical: 32 / 60 (53.33%)
+Neutral: 0 / 60 (0.00%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 70 / 120 (58.33%)
+Anti-stereotypical: 47 / 120 (39.17%)
+Neutral: 2 / 120 (1.67%)
+None of the above: 1 / 120 (0.83%)
+
+
+
+
+Stereo
+SAGE FT model, SSS valid
+
+LoRA 8 -
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 86 / 150 (57.33%)
+Anti-stereotypical: 62 / 150 (41.33%)
+Irrelevant: 2 / 150 (1.33%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 56 / 135 (41.48%)
+Anti-stereotypical: 79 / 135 (58.52%)
+Irrelevant: 0 / 135 (0.00%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 142 / 285 (49.82%)
+Anti-stereotypical: 141 / 285 (49.47%)
+Irrelevant: 2 / 285 (0.70%)
+None of the above: 0 / 285 (0.00%)
+
+LoRA 4 -
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 86 / 150 (57.33%)
+Anti-stereotypical: 63 / 150 (42.00%)
+Irrelevant: 1 / 150 (0.67%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 55 / 135 (40.74%)
+Anti-stereotypical: 80 / 135 (59.26%)
+Irrelevant: 0 / 135 (0.00%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 141 / 285 (49.47%)
+Anti-stereotypical: 143 / 285 (50.18%)
+Irrelevant: 1 / 285 (0.35%)
+None of the above: 0 / 285 (0.00%)
+
+SSS FT model, SAGE valid
+
+Lora 8 -
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 52 / 60 (86.67%)
+Anti-stereotypical: 6 / 60 (10.00%)
+Neutral: 2 / 60 (3.33%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 52 / 60 (86.67%)
+Anti-stereotypical: 8 / 60 (13.33%)
+Neutral: 0 / 60 (0.00%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 104 / 120 (86.67%)
+Anti-stereotypical: 14 / 120 (11.67%)
+Neutral: 2 / 120 (1.67%)
+None of the above: 0 / 120 (0.00%)
+
+Lora 4 -
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 54 / 60 (90.00%)
+Anti-stereotypical: 5 / 60 (8.33%)
+Neutral: 1 / 60 (1.67%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 47 / 60 (78.33%)
+Anti-stereotypical: 13 / 60 (21.67%)
+Neutral: 0 / 60 (0.00%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 101 / 120 (84.17%)
+Anti-stereotypical: 18 / 120 (15.00%)
+Neutral: 1 / 120 (0.83%)
+None of the above: 0 / 120 (0.00%)
+
+
+
+Unbiased
+
+SAGE FT model, SSS valid
+
+Lora 8 -
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 64 / 150 (42.67%)
+Anti-stereotypical: 44 / 150 (29.33%)
+Irrelevant: 42 / 150 (28.00%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 49 / 135 (36.30%)
+Anti-stereotypical: 52 / 135 (38.52%)
+Irrelevant: 34 / 135 (25.19%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 113 / 285 (39.65%)
+Anti-stereotypical: 96 / 285 (33.68%)
+Irrelevant: 76 / 285 (26.67%)
+None of the above: 0 / 285 (0.00%)
+
+Lora 4 -
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 64 / 149 (42.95%)
+Anti-stereotypical: 46 / 149 (30.87%)
+Irrelevant: 39 / 149 (26.17%)
+None of the above: 0 / 149 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 51 / 133 (38.35%)
+Anti-stereotypical: 52 / 133 (39.10%)
+Irrelevant: 30 / 133 (22.56%)
+None of the above: 0 / 133 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 115 / 282 (40.78%)
+Anti-stereotypical: 98 / 282 (34.75%)
+Irrelevant: 69 / 282 (24.47%)
+None of the above: 0 / 282 (0.00%)
+
+
+
+
+LLaMA-Omni
+base - 
+SAGE 
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 42 / 60 (70.00%)
+Anti-stereotypical: 10 / 60 (16.67%)
+Neutral: 3 / 60 (5.00%)
+None of the above: 5 / 60 (8.33%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 38 / 60 (63.33%)
+Anti-stereotypical: 17 / 60 (28.33%)
+Neutral: 1 / 60 (1.67%)
+None of the above: 4 / 60 (6.67%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 80 / 120 (66.67%)
+Anti-stereotypical: 27 / 120 (22.50%)
+Neutral: 4 / 120 (3.33%)
+None of the above: 9 / 120 (7.50%)
+SSS 
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 52 / 150 (34.67%)
+Anti-stereotypical: 55 / 150 (36.67%)
+Irrelevant: 11 / 150 (7.33%)
+None of the above: 32 / 150 (21.33%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 42 / 135 (31.11%)
+Anti-stereotypical: 56 / 135 (41.48%)
+Irrelevant: 4 / 135 (2.96%)
+None of the above: 33 / 135 (24.44%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 94 / 285 (32.98%)
+Anti-stereotypical: 111 / 285 (38.95%)
+Irrelevant: 15 / 285 (5.26%)
+None of the above: 65 / 285 (22.81%)
+Anti-stereo
+SAGE FT model, SSS valid
+Lora4
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 76 / 150 (50.67%)
+Anti-stereotypical: 63 / 150 (42.00%)
+Irrelevant: 11 / 150 (7.33%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 46 / 135 (34.07%)
+Anti-stereotypical: 81 / 135 (60.00%)
+Irrelevant: 8 / 135 (5.93%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 122 / 285 (42.81%)
+Anti-stereotypical: 144 / 285 (50.53%)
+Irrelevant: 19 / 285 (6.67%)
+None of the above: 0 / 285 (0.00%)
+
+Lora8
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 65 / 150 (43.33%)
+Anti-stereotypical: 76 / 150 (50.67%)
+Irrelevant: 9 / 150 (6.00%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 62 / 135 (45.93%)
+Anti-stereotypical: 70 / 135 (51.85%)
+Irrelevant: 3 / 135 (2.22%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 127 / 285 (44.56%)
+Anti-stereotypical: 146 / 285 (51.23%)
+Irrelevant: 12 / 285 (4.21%)
+None of the above: 0 / 285 (0.00%)
+
+
+
+SSS FT model, SAGE valid
+LoRA4
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 37 / 60 (61.67%)
+Anti-stereotypical: 19 / 60 (31.67%)
+Neutral: 4 / 60 (6.67%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 29 / 60 (48.33%)
+Anti-stereotypical: 26 / 60 (43.33%)
+Neutral: 5 / 60 (8.33%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 66 / 120 (55.00%)
+Anti-stereotypical: 45 / 120 (37.50%)
+Neutral: 9 / 120 (7.50%)
+None of the above: 0 / 120 (0.00%)
+
+LoRA8
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 39 / 60 (65.00%)
+Anti-stereotypical: 18 / 60 (30.00%)
+Neutral: 1 / 60 (1.67%)
+None of the above: 2 / 60 (3.33%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 34 / 60 (56.67%)
+Anti-stereotypical: 21 / 60 (35.00%)
+Neutral: 4 / 60 (6.67%)
+None of the above: 1 / 60 (1.67%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 73 / 120 (60.83%)
+Anti-stereotypical: 39 / 120 (32.50%)
+Neutral: 5 / 120 (4.17%)
+None of the above: 3 / 120 (2.50%)
+
+
+
+Stereo
+SAGE FT model, SSS valid
+
+Lora 8 - 
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 34 / 60 (56.67%)
+Anti-stereotypical: 20 / 60 (33.33%)
+Neutral: 6 / 60 (10.00%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 39 / 60 (65.00%)
+Anti-stereotypical: 19 / 60 (31.67%)
+Neutral: 2 / 60 (3.33%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 73 / 120 (60.83%)
+Anti-stereotypical: 39 / 120 (32.50%)
+Neutral: 8 / 120 (6.67%)
+None of the above: 0 / 120 (0.00%)
+../inference/sage_test_suite/20250807-160224_stereo_Lora8_Eval_Ready.json
+
+Lora 4 - 
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 40 / 60 (66.67%)
+Anti-stereotypical: 17 / 60 (28.33%)
+Neutral: 3 / 60 (5.00%)
+None of the above: 0 / 60 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 31 / 60 (51.67%)
+Anti-stereotypical: 24 / 60 (40.00%)
+Neutral: 4 / 60 (6.67%)
+None of the above: 1 / 60 (1.67%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 71 / 120 (59.17%)
+Anti-stereotypical: 41 / 120 (34.17%)
+Neutral: 7 / 120 (5.83%)
+None of the above: 1 / 120 (0.83%)
+
+SSS FT model, SAGE valid
+
+Lora 8 - 
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 70 / 150 (46.67%)
+Anti-stereotypical: 74 / 150 (49.33%)
+Irrelevant: 6 / 150 (4.00%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 52 / 135 (38.52%)
+Anti-stereotypical: 79 / 135 (58.52%)
+Irrelevant: 3 / 135 (2.22%)
+None of the above: 1 / 135 (0.74%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 122 / 285 (42.81%)
+Anti-stereotypical: 153 / 285 (53.68%)
+Irrelevant: 9 / 285 (3.16%)
+None of the above: 1 / 285 (0.35%)
+
+
+lora 4 -
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 76 / 150 (50.67%)
+Anti-stereotypical: 71 / 150 (47.33%)
+Irrelevant: 3 / 150 (2.00%)
+None of the above: 0 / 150 (0.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 62 / 135 (45.93%)
+Anti-stereotypical: 72 / 135 (53.33%)
+Irrelevant: 1 / 135 (0.74%)
+None of the above: 0 / 135 (0.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 138 / 285 (48.42%)
+Anti-stereotypical: 143 / 285 (50.18%)
+Irrelevant: 4 / 285 (1.40%)
+None of the above: 0 / 285 (0.00%)
+../inference/spoken_stereoset_benchmark/20250807-155639_stereo_Lora4_Eval_Ready.json
+
+
+
+Unbiased
+
+SAGE FT model, SSS valid
+
+Lora 8 - 
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 6 / 150 (4.00%)
+Anti-stereotypical: 5 / 150 (3.33%)
+Irrelevant: 34 / 150 (22.67%)
+None of the above: 105 / 150 (70.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 6 / 135 (4.44%)
+Anti-stereotypical: 2 / 135 (1.48%)
+Irrelevant: 31 / 135 (22.96%)
+None of the above: 96 / 135 (71.11%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 12 / 285 (4.21%)
+Anti-stereotypical: 7 / 285 (2.46%)
+Irrelevant: 65 / 285 (22.81%)
+None of the above: 201 / 285 (70.53%)
+
+Lora 4 -
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 4 / 150 (2.67%)
+Anti-stereotypical: 6 / 150 (4.00%)
+Irrelevant: 19 / 150 (12.67%)
+None of the above: 121 / 150 (80.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 7 / 135 (5.19%)
+Anti-stereotypical: 3 / 135 (2.22%)
+Irrelevant: 16 / 135 (11.85%)
+None of the above: 109 / 135 (80.74%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 11 / 285 (3.86%)
+Anti-stereotypical: 9 / 285 (3.16%)
+Irrelevant: 35 / 285 (12.28%)
+None of the above: 230 / 285 (80.70%)
+../inference/spoken_stereoset_benchmark/20250807-163215_neutral_Lora4_Eval_Ready.json
+
+
+
+
+
+LTU-AS
+base - 
+SAGE 
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 20 / 60 (33.33%)
+Anti-stereotypical: 22 / 60 (36.67%)
+Neutral: 15 / 60 (25.00%)
+None of the above: 3 / 60 (5.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 21 / 60 (35.00%)
+Anti-stereotypical: 28 / 60 (46.67%)
+Neutral: 10 / 60 (16.67%)
+None of the above: 1 / 60 (1.67%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 41 / 120 (34.17%)
+Anti-stereotypical: 50 / 120 (41.67%)
+Neutral: 25 / 120 (20.83%)
+None of the above: 4 / 120 (3.33%)
+
+SSS 
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 30 / 150 (20.00%)
+Anti-stereotypical: 36 / 150 (24.00%)
+Irrelevant: 38 / 150 (25.33%)
+None of the above: 46 / 150 (30.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 37 / 135 (27.41%)
+Anti-stereotypical: 29 / 135 (21.48%)
+Irrelevant: 34 / 135 (25.19%)
+None of the above: 35 / 135 (25.93%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 67 / 285 (23.51%)
+Anti-stereotypical: 65 / 285 (22.81%)
+Irrelevant: 72 / 285 (25.26%)
+None of the above: 81 / 285 (28.42%)
+
+Anti-stereo
+
+
+SAGE FT model, SSS valid
+
+Lora8
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 36 / 150 (24.00%)
+Anti-stereotypical: 37 / 150 (24.67%)
+Irrelevant: 39 / 150 (26.00%)
+None of the above: 38 / 150 (25.33%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 43 / 135 (31.85%)
+Anti-stereotypical: 31 / 135 (22.96%)
+Irrelevant: 33 / 135 (24.44%)
+None of the above: 28 / 135 (20.74%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 79 / 285 (27.72%)
+Anti-stereotypical: 68 / 285 (23.86%)
+Irrelevant: 72 / 285 (25.26%)
+None of the above: 66 / 285 (23.16%)
+
+Lora 4
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 36 / 150 (24.00%)
+Anti-stereotypical: 39 / 150 (26.00%)
+Irrelevant: 33 / 150 (22.00%)
+None of the above: 42 / 150 (28.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 48 / 135 (35.56%)
+Anti-stereotypical: 34 / 135 (25.19%)
+Irrelevant: 22 / 135 (16.30%)
+None of the above: 31 / 135 (22.96%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 84 / 285 (29.47%)
+Anti-stereotypical: 73 / 285 (25.61%)
+Irrelevant: 55 / 285 (19.30%)
+None of the above: 73 / 285 (25.61%)
+
+
+SSS FT model, SAGE valid
+
+Lora8
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 18 / 60 (30.00%)
+Anti-stereotypical: 18 / 60 (30.00%)
+Neutral: 17 / 60 (28.33%)
+None of the above: 7 / 60 (11.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 27 / 60 (45.00%)
+Anti-stereotypical: 17 / 60 (28.33%)
+Neutral: 12 / 60 (20.00%)
+None of the above: 4 / 60 (6.67%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 45 / 120 (37.50%)
+Anti-stereotypical: 35 / 120 (29.17%)
+Neutral: 29 / 120 (24.17%)
+None of the above: 11 / 120 (9.17%)
+
+Lora4
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 24 / 60 (40.00%)
+Anti-stereotypical: 15 / 60 (25.00%)
+Neutral: 10 / 60 (16.67%)
+None of the above: 11 / 60 (18.33%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 20 / 60 (33.33%)
+Anti-stereotypical: 18 / 60 (30.00%)
+Neutral: 14 / 60 (23.33%)
+None of the above: 8 / 60 (13.33%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 44 / 120 (36.67%)
+Anti-stereotypical: 33 / 120 (27.50%)
+Neutral: 24 / 120 (20.00%)
+None of the above: 19 / 120 (15.83%)
+
+
+
+
+Stereo
+SAGE FT model, SSS valid
+Lora 8
+
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 33 / 150 (22.00%)
+Anti-stereotypical: 38 / 150 (25.33%)
+Irrelevant: 40 / 150 (26.67%)
+None of the above: 39 / 150 (26.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 39 / 135 (28.89%)
+Anti-stereotypical: 34 / 135 (25.19%)
+Irrelevant: 28 / 135 (20.74%)
+None of the above: 34 / 135 (25.19%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 72 / 285 (25.26%)
+Anti-stereotypical: 72 / 285 (25.26%)
+Irrelevant: 68 / 285 (23.86%)
+None of the above: 73 / 285 (25.61%)
+
+Lora 4
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 23 / 60 (38.33%)
+Anti-stereotypical: 16 / 60 (26.67%)
+Neutral: 17 / 60 (28.33%)
+None of the above: 4 / 60 (6.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 24 / 60 (40.00%)
+Anti-stereotypical: 23 / 60 (38.33%)
+Neutral: 7 / 60 (11.67%)
+None of the above: 6 / 60 (10.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 47 / 120 (39.17%)
+Anti-stereotypical: 39 / 120 (32.50%)
+Neutral: 24 / 120 (20.00%)
+None of the above: 10 / 120 (8.33%)
+
+SSS FT model, SAGE valid
+Lora 8
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 19 / 60 (31.67%)
+Anti-stereotypical: 16 / 60 (26.67%)
+Neutral: 14 / 60 (23.33%)
+None of the above: 11 / 60 (18.33%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 24 / 60 (40.00%)
+Anti-stereotypical: 18 / 60 (30.00%)
+Neutral: 12 / 60 (20.00%)
+None of the above: 6 / 60 (10.00%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 43 / 120 (35.83%)
+Anti-stereotypical: 34 / 120 (28.33%)
+Neutral: 26 / 120 (21.67%)
+None of the above: 17 / 120 (14.17%)
+
+
+Lora 4
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 35 / 150 (23.33%)
+Anti-stereotypical: 46 / 150 (30.67%)
+Irrelevant: 35 / 150 (23.33%)
+None of the above: 34 / 150 (22.67%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 39 / 135 (28.89%)
+Anti-stereotypical: 32 / 135 (23.70%)
+Irrelevant: 34 / 135 (25.19%)
+None of the above: 30 / 135 (22.22%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 74 / 285 (25.96%)
+Anti-stereotypical: 78 / 285 (27.37%)
+Irrelevant: 69 / 285 (24.21%)
+None of the above: 64 / 285 (22.46%)
+
+
+
+Unbiased
+
+SAGE FT model, SSS valid
+
+Lora 8
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 44 / 150 (29.33%)
+Anti-stereotypical: 39 / 150 (26.00%)
+Irrelevant: 38 / 150 (25.33%)
+None of the above: 29 / 150 (19.33%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 40 / 135 (29.63%)
+Anti-stereotypical: 31 / 135 (22.96%)
+Irrelevant: 36 / 135 (26.67%)
+None of the above: 28 / 135 (20.74%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 84 / 285 (29.47%)
+Anti-stereotypical: 70 / 285 (24.56%)
+Irrelevant: 74 / 285 (25.96%)
+None of the above: 57 / 285 (20.00%)
+
+Lora 4
+--- Class Label Percentages for Female Voices ---
+Stereotypical: 30 / 150 (20.00%)
+Anti-stereotypical: 44 / 150 (29.33%)
+Irrelevant: 40 / 150 (26.67%)
+None of the above: 36 / 150 (24.00%)
+
+--- Class Label Percentages for Male Voices ---
+Stereotypical: 38 / 135 (28.15%)
+Anti-stereotypical: 25 / 135 (18.52%)
+Irrelevant: 34 / 135 (25.19%)
+None of the above: 38 / 135 (28.15%)
+
+--- Class Label Percentages (Overall) ---
+Stereotypical: 68 / 285 (23.86%)
+Anti-stereotypical: 69 / 285 (24.21%)
+Irrelevant: 74 / 285 (25.96%)
+None of the above: 74 / 285 (25.96%)
+
