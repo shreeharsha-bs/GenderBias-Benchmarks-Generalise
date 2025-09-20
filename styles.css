@@ -198,6 +198,109 @@ body {
     text-align: center;
 }
 
+/* Enhanced Cross Benchmark Performances Card */
+.cross-benchmark-card {
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+    border: 2px solid #667eea;
+    position: relative;
+    overflow: hidden;
+}
+
+.cross-benchmark-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    color: #667eea;
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 1.4rem;
+}
+
+.card-content {
+    margin-bottom: 25px;
+}
+
+.card-description {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.performance-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2d3748;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.highlight-item i {
+    color: #667eea;
+    font-size: 0.85rem;
+}
+
+.card-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.enhanced-download {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.enhanced-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.enhanced-download .download-icon {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
 /* Plots section */
 .plots-section {
     margin-top: 60px;
@@ -601,6 +704,22 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 8px;
+    }
+    
+    /* Enhanced card responsive styles */
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .performance-highlights {
+        align-items: center;
+    }
+    
+    .enhanced-download {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 

@@ -52,14 +52,36 @@
                 <h2 class="section-title">Results & Analysis</h2>
                 
                 <div class="results-grid">
-                    <div class="result-card">
-                        <h3>Cross Benchmark Performances</h3>
-                        <div class="metrics">
+                    <div class="result-card cross-benchmark-card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line card-icon"></i>
+                            <h3>Cross Benchmark Performances</h3>
                         </div>
-                        <div class="metric-download">
-                            <a href="assets/results/mcqa_results.txt" download class="download-btn">
-                                <i class="fas fa-download"></i> Download MCQA Results
-                            </a>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Comprehensive analysis of model performance across different evaluation benchmarks, including MCQA and long-form generation tasks.
+                            </p>
+                            <div class="performance-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Multi-domain evaluation</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Cross-task generalization</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <span>Bias measurement</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="download-btn enhanced-download" onclick="downloadFile('assets/results/mcqa_results.txt', 'mcqa_results.txt')">
+                                <i class="fas fa-download"></i> 
+                                <span>Download MCQA Results</span>
+                                <i class="fas fa-file-alt download-icon"></i>
+                            </button>
                         </div>
                     </div>
                 </div>

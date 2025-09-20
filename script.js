@@ -68,12 +68,26 @@ async function downloadFolder(folderPath) {
 
 // Alternative individual file download function
 function downloadFile(filePath, fileName) {
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    try {
+        showNotification(`Starting download: ${fileName}`, 'info');
+        
+        const link = document.createElement('a');
+        link.href = filePath;
+        link.download = fileName;
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Show success message after a short delay
+        setTimeout(() => {
+            showNotification(`Download completed: ${fileName}`, 'success');
+        }, 1000);
+        
+    } catch (error) {
+        console.error('Download error:', error);
+        showNotification(`Download failed: ${fileName}. Please try again.`, 'error');
+    }
 }
 
 // Handle download buttons
