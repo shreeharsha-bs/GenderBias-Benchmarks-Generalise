@@ -41,7 +41,7 @@
                     <p>
                         Recent work in benchmarking bias and fairness in speech large language models (SpeechLLMs) has relied heavily on multiple-choice question answering (MCQA) formats. The model is tasked to choose between stereotypical, anti-stereotypical, or neutral/irrelevant answers given an input speech prompt and an optional text prompt. Such MCQA benchmarks implicitly assume that model performance is consistent across other MCQA tasks, voices, and other task formats such as more realistic, long-form evaluations. In this paper, we probe that assumption.
 
-                        We fine-tune three SpeechLLMs using LoRA adapters to induce specific MCQA behaviours: preference for stereotypical, anti-stereotypical, or neutral/uncertain answers. We then evaluate whether these behaviours generalise to another, distinct MCQA benchmark, and more critically to long-form, creative generation tasks. %We further test whether a recent MCQA bias-mitigation method shows similar mitigation effects in long-form outputs. Our results show that performance on MCQA bias benchmarks fails to reliably predict performances across other MCQA benchmarks, and more importantly across long-form tasks. We conclude that current MCQA bias benchmarks show limited evidence of cross-task generalisation in the speech domain, and also propose an evaluation suite for measuring behaviour transferability in future models and benchmarks. 
+                        We fine-tune three SpeechLLMs using LoRA adapters to induce specific MCQA behaviours: preference for stereotypical, anti-stereotypical, or neutral/uncertain answers. We then evaluate whether these behaviours generalise to another, distinct MCQA benchmark, and more critically to long-form, creative generation tasks. Our results show that performance on MCQA bias benchmarks fails to reliably predict performances across other MCQA benchmarks, and more importantly across long-form tasks. We conclude that current MCQA bias benchmarks show limited evidence of cross-task generalisation in the speech domain, and also propose an evaluation suite for measuring behaviour transferability in future models and benchmarks.
                     </p>
                 </div>
             </div>
@@ -55,18 +55,6 @@
                     <div class="result-card">
                         <h3>Cross Benchmark Performances</h3>
                         <div class="metrics">
-                            <div class="metric">
-                                <span class="metric-value">[XX%]</span>
-                                <span class="metric-label">Benchmark Accuracy</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">[XX%]</span>
-                                <span class="metric-label">Generalization Score</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">[XX]</span>
-                                <span class="metric-label">Models Evaluated</span>
-                            </div>
                         </div>
                         <div class="metric-download">
                             <a href="assets/results/mcqa_results.txt" download class="download-btn">
