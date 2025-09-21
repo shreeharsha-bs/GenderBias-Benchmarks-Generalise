@@ -132,56 +132,272 @@
                         
                         <!-- Placeholders for 6 additional plots -->
                         <div class="plot-container">
-                            <h4>LLaMA-Omni Anti-stereotypical Long-form Dimensions -1 Heatmap</h4>
-                            <div class="pdf-placeholder" data-plot="benchmark-comparison">
-                                <i class="fas fa-file-pdf"></i>
-                                <p>Generalization across different evaluation benchmarks</p>
-                                <p class="placeholder-text">Performance comparison between MCQA and long-form evaluation tasks</p>
+                            <h4>Anti-stereotypical LoRA4 Dimensions -1 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="anti-lora4-dim1">
+                                <iframe src="assets/heatmaps_batch/anti_Lora4/heatmap_first_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/anti_Lora4/heatmap_first_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/anti_Lora4/heatmap_first_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>LLaMA-Omni Anti-stereotypical Long-form Dimensions -2 Heatmap</h4>
-                            <div class="pdf-placeholder" data-plot="voice-impact">
-                                <i class="fas fa-file-pdf"></i>
-                                <p>Impact of voice gender on model responses</p>
-                                <p class="placeholder-text">Analysis across different TTS voices and gender presentations</p>
+                            <h4>Anti-stereotypical LoRA4 Dimensions -2 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="anti-lora4-dim2">
+                                <iframe src="assets/heatmaps_batch/anti_Lora4/heatmap_second_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/anti_Lora4/heatmap_second_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/anti_Lora4/heatmap_second_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>LLaMA-Omni Anti-stereotypical Long-form Dimensions -3 Heatmap</h4>
-                            <div class="pdf-placeholder" data-plot="finetuning-effects">
-                                <i class="fas fa-file-pdf"></i>
-                                <p>Impact of bias-aware fine-tuning on model behavior</p>
-                                <p class="placeholder-text">Before and after fine-tuning performance comparison</p>
+                            <h4>Anti-stereotypical LoRA4 Dimensions -3 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="anti-lora4-dim3">
+                                <iframe src="assets/heatmaps_batch/anti_Lora4/heatmap_third_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/anti_Lora4/heatmap_third_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/anti_Lora4/heatmap_third_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>LTU-AS Anti-stereotypical Long-form Dimensions -1 Heatmap</h4>
-                            <div class="pdf-placeholder" data-plot="model-comparison">
-                                <i class="fas fa-file-pdf"></i>
-                                <p>Comparative analysis across different SpeechLLM models</p>
-                                <p class="placeholder-text">Performance metrics and bias patterns comparison</p>
+                            <h4>Anti-stereotypical LoRA8 Dimensions -1 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="anti-lora8-dim1">
+                                <iframe src="assets/heatmaps_batch/anti_Lora8/heatmap_first_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/anti_Lora8/heatmap_first_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/anti_Lora8/heatmap_first_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>LTU-AS Anti-stereotypical Long-form Dimensions -2 Heatmap</h4>
-                            <div class="pdf-placeholder" data-plot="bias-mitigation">
-                                <i class="fas fa-file-pdf"></i>
-                                <p>Effectiveness of bias mitigation strategies</p>
-                                <p class="placeholder-text">Analysis of intervention methods and their impact</p>
+                            <h4>Anti-stereotypical LoRA8 Dimensions -2 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="anti-lora8-dim2">
+                                <iframe src="assets/heatmaps_batch/anti_Lora8/heatmap_second_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/anti_Lora8/heatmap_second_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/anti_Lora8/heatmap_second_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="plot-container">
-                            <h4>LTU-AS Anti-stereotypical Long-form Dimensions -3 Heatmap</h4>
-                            <div class="pdf-placeholder" data-plot="longform-outcomes">
-                                <i class="fas fa-file-pdf"></i>
-                                <p>Results from creative generation and long-form tasks</p>
-                                <p class="placeholder-text">Generalization patterns in unrestricted generation</p>
+                            <h4>Anti-stereotypical LoRA8 Dimensions -3 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="anti-lora8-dim3">
+                                <iframe src="assets/heatmaps_batch/anti_Lora8/heatmap_third_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/anti_Lora8/heatmap_third_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/anti_Lora8/heatmap_third_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Neutral LoRA4 Dimensions -1 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="neutral-lora4-dim1">
+                                <iframe src="assets/heatmaps_batch/neutral_Lora4/heatmap_first_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/neutral_Lora4/heatmap_first_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/neutral_Lora4/heatmap_first_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Neutral LoRA4 Dimensions -2 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="neutral-lora4-dim2">
+                                <iframe src="assets/heatmaps_batch/neutral_Lora4/heatmap_second_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/neutral_Lora4/heatmap_second_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/neutral_Lora4/heatmap_second_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Neutral LoRA4 Dimensions -3 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="neutral-lora4-dim3">
+                                <iframe src="assets/heatmaps_batch/neutral_Lora4/heatmap_third_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/neutral_Lora4/heatmap_third_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/neutral_Lora4/heatmap_third_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Neutral LoRA8 Dimensions -1 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="neutral-lora8-dim1">
+                                <iframe src="assets/heatmaps_batch/neutral_Lora8/heatmap_first_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/neutral_Lora8/heatmap_first_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/neutral_Lora8/heatmap_first_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Neutral LoRA8 Dimensions -2 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="neutral-lora8-dim2">
+                                <iframe src="assets/heatmaps_batch/neutral_Lora8/heatmap_second_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/neutral_Lora8/heatmap_second_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/neutral_Lora8/heatmap_second_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Neutral LoRA8 Dimensions -3 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="neutral-lora8-dim3">
+                                <iframe src="assets/heatmaps_batch/neutral_Lora8/heatmap_third_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/neutral_Lora8/heatmap_third_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/neutral_Lora8/heatmap_third_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Stereotypical LoRA4 Dimensions -1 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="stereo-lora4-dim1">
+                                <iframe src="assets/heatmaps_batch/stereo_Lora4/heatmap_first_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/stereo_Lora4/heatmap_first_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/stereo_Lora4/heatmap_first_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Stereotypical LoRA4 Dimensions -2 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="stereo-lora4-dim2">
+                                <iframe src="assets/heatmaps_batch/stereo_Lora4/heatmap_second_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/stereo_Lora4/heatmap_second_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/stereo_Lora4/heatmap_second_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Stereotypical LoRA4 Dimensions -3 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="stereo-lora4-dim3">
+                                <iframe src="assets/heatmaps_batch/stereo_Lora4/heatmap_third_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/stereo_Lora4/heatmap_third_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/stereo_Lora4/heatmap_third_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Stereotypical LoRA8 Dimensions -1 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="stereo-lora8-dim1">
+                                <iframe src="assets/heatmaps_batch/stereo_Lora8/heatmap_first_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/stereo_Lora8/heatmap_first_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/stereo_Lora8/heatmap_first_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Stereotypical LoRA8 Dimensions -2 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="stereo-lora8-dim2">
+                                <iframe src="assets/heatmaps_batch/stereo_Lora8/heatmap_second_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/stereo_Lora8/heatmap_second_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/stereo_Lora8/heatmap_second_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="plot-container">
+                            <h4>Stereotypical LoRA8 Dimensions -3 Heatmap</h4>
+                            <div class="pdf-viewer" data-plot="stereo-lora8-dim3">
+                                <iframe src="assets/heatmaps_batch/stereo_Lora8/heatmap_third_dimensions_differences.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                                <div class="plot-controls">
+                                    <a href="assets/heatmaps_batch/stereo_Lora8/heatmap_third_dimensions_differences.pdf" download class="download-btn">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </a>
+                                    <button class="fullscreen-btn" onclick="openFullscreen('assets/heatmaps_batch/stereo_Lora8/heatmap_third_dimensions_differences.pdf')">
+                                        <i class="fas fa-expand"></i> Full Screen
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -313,7 +529,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 - Do Bias Benchmarks Generalise? Research Project</p>
+            <p>2025 - Do Bias Benchmarks Generalise? Research Project</p>
             <div class="footer-links">
                 <a href="https://github.com/shreeharsha-bs/GenderBias-Benchmarks-Generalize">
                     <i class="fab fa-github"></i> GitHub
