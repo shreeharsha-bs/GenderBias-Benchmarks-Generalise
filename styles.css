@@ -29,14 +29,15 @@ body {
 
 .header-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .logo-section {
-    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .kth-logo {
@@ -46,8 +47,8 @@ body {
 }
 
 .title-section {
-    flex: 1;
-    min-width: 300px;
+    width: 100%;
+    text-align: center;
 }
 
 .title {
@@ -704,8 +705,7 @@ body {
 /* Responsive design */
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column;
-        gap: 25px;
+        gap: 20px;
     }
     
     .kth-logo {
