@@ -27,6 +27,29 @@ body {
     text-align: center;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logo-section {
+    flex-shrink: 0;
+}
+
+.kth-logo {
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.title-section {
+    flex: 1;
+    min-width: 300px;
+}
+
 .title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -57,6 +80,24 @@ body {
 
 .author-placeholder {
     font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.affiliation {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.department {
+    font-size: 1.05rem;
+    font-weight: 500;
+    opacity: 0.95;
+    margin-bottom: 5px;
+}
+
+.institution {
+    font-size: 1rem;
+    font-weight: 400;
     opacity: 0.9;
 }
 
@@ -662,6 +703,15 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .kth-logo {
+        height: 60px;
+    }
+    
     .title {
         font-size: 2rem;
     }
@@ -728,12 +778,24 @@ body {
         padding: 0 15px;
     }
     
+    .kth-logo {
+        height: 50px;
+    }
+    
     .title {
         font-size: 1.8rem;
     }
     
     .subtitle {
         font-size: 1rem;
+    }
+    
+    .department {
+        font-size: 0.95rem;
+    }
+    
+    .institution {
+        font-size: 0.9rem;
     }
     
     .section-title {
