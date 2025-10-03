@@ -13,8 +13,6 @@ This repository hosts a GitHub Pages website showcasing our research. The websit
 
 ### Website Features
 
-- 📊 **Results ***: MCQA and long form results
+- 📊 **Results **: MCQA and long form results
 - 💻 **Code Repository**: Organized download links for different code components
 For LTU_AS we use the code available in the original repository for both inference and fine-tuning.
-
-## 🚀 Getting Started
