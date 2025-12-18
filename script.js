@@ -40,6 +40,25 @@ function copyToClipboard() {
     });
 }
 
+// LLM Judge tab switching
+function showJudgeTab(tabName) {
+    // Hide all content
+    document.querySelectorAll('.judge-content').forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    // Remove active from all tabs
+    document.querySelectorAll('.judge-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    // Show selected content
+    document.getElementById(tabName + '-tab').classList.add('active');
+    
+    // Activate selected tab button
+    event.target.classList.add('active');
+}
+
 // Download folder function
 async function downloadFolder(folderPath) {
     try {

@@ -687,6 +687,192 @@ body {
     background: #5a67d8;
 }
 
+/* LLM Judge Section */
+.llm-judge-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #e2e8f0;
+}
+
+.llm-judge-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2d3748;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.llm-judge-section h3 i {
+    color: #667eea;
+}
+
+.judge-description {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.judge-description strong {
+    color: #667eea;
+}
+
+.judge-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0;
+}
+
+.judge-tab {
+    padding: 12px 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    transition: all 0.3s ease;
+    margin-bottom: -2px;
+}
+
+.judge-tab:hover {
+    color: #667eea;
+}
+
+.judge-tab.active {
+    color: #667eea;
+    border-bottom-color: #667eea;
+}
+
+.judge-content {
+    display: none;
+}
+
+.judge-content.active {
+    display: block;
+}
+
+.dimensions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.dimension-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.dimension-card h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.dimension-item {
+    margin-bottom: 20px;
+}
+
+.dimension-item:last-child {
+    margin-bottom: 0;
+}
+
+.dimension-item h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.dim-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.rubric {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rubric .score {
+    font-size: 0.85rem;
+    color: #555;
+    padding: 4px 8px;
+    background: #f7fafc;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+.rubric .score strong {
+    color: #667eea;
+}
+
+.prompt-template {
+    background: #2d3748;
+    border-radius: 10px;
+    padding: 25px;
+    overflow-x: auto;
+}
+
+.prompt-template pre {
+    margin: 0;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.prompt-template code {
+    color: #e2e8f0;
+}
+
+.gender-note {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea15, #764ba215);
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.gender-note i {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin-top: 2px;
+}
+
+.gender-note strong {
+    color: #667eea;
+}
+
+.gender-note div {
+    color: #444;
+    line-height: 1.6;
+}
+
 /* Footer */
 .footer {
     background: #2d3748;
@@ -779,6 +965,38 @@ body {
     .enhanced-download {
         padding: 10px 20px;
         font-size: 0.9rem;
+    }
+    
+    /* LLM Judge responsive styles */
+    .llm-judge-section {
+        padding: 25px;
+    }
+    
+    .dimensions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .judge-tabs {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .judge-tab {
+        padding: 10px 16px;
+        text-align: center;
+    }
+    
+    .gender-note {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .prompt-template {
+        padding: 15px;
+    }
+    
+    .prompt-template pre {
+        font-size: 0.8rem;
     }
 }
 
