@@ -484,9 +484,10 @@
                 <div class="llm-judge-section">
                     <h3><i class="fas fa-gavel"></i> LLM Judge Evaluation Prompt</h3>
                     <p class="judge-description">
-                        We use Gemini 2.0 Flash as an LLM judge to evaluate long-form responses across task-specific dimensions. 
-                        <strong>Important:</strong> All model responses are sanitized to use second-person pronouns only (you/your), 
-                        ensuring the judge is never exposed to gender cues from the speech transcript. The judge evaluates 
+                        We use gemini-2.5-flash-lite-preview-06-17 as an LLM judge to evaluate long-form responses across task-specific dimensions.
+                        
+                        
+                        <strong>Important:</strong> All model responses were verified to contain only second-person pronouns (you/your), ensuring the judge is never exposed to gender cues from the speech transcript. The judge evaluates 
                         responses on a 1-5 scale based on the rubrics below.
                     </p>
                     
@@ -686,10 +687,7 @@ For example:
                         <div class="gender-note">
                             <i class="fas fa-info-circle"></i>
                             <div>
-                                <strong>Gender-Neutral Evaluation:</strong> All model responses (model_answer) are sanitized before 
-                                evaluation to ensure they contain only second-person pronouns (you/your). This guarantees that the 
-                                LLM judge is never exposed to gender cues that could influence scoring. The judge evaluates response 
-                                quality purely based on the content dimensions, not the gender of the speaker.
+                                <strong>Gender-Neutral Evaluation:</strong> All model responses (model_answer) were verified to contain no gendered pronouns before evaluation. Model responses always contain only second-person pronouns (you/your). The LLM judge is never exposed to gender cues present only in the speech prompt that could influence scoring.
                             </div>
                         </div>
                     </div>
