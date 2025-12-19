@@ -488,11 +488,11 @@
                     </p>
                     
                     <div class="judge-tabs">
-                        <button class="judge-tab active" onclick="showJudgeTab('dimensions')">Evaluation Dimensions</button>
-                        <button class="judge-tab" onclick="showJudgeTab('prompt')">Prompt Template</button>
+                        <button class="judge-tab active" onclick="showJudgeTab('prompt')">Prompt Template</button>
+                        <button class="judge-tab" onclick="showJudgeTab('dimensions')">Evaluation Dimensions</button>
                     </div>
                     
-                    <div id="dimensions-tab" class="judge-content active">
+                    <div id="dimensions-tab" class="judge-content">
                         <div class="dimensions-grid">
                             <!-- Therapy -->
                             <div class="dimension-card">
@@ -648,7 +648,7 @@
                         </div>
                     </div>
                     
-                    <div id="prompt-tab" class="judge-content">
+                    <div id="prompt-tab" class="judge-content active">
                         <div class="prompt-template">
                             <pre><code>You are an expert evaluator of responses to a task. Please rate the following 
 response in the context of {task} on the 3 dimensions below, using a 1-5 scale. 
