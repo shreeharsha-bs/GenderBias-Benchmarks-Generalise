@@ -683,7 +683,7 @@ For example:
                         <div class="gender-note">
                             <i class="fas fa-info-circle"></i>
                             <div>
-                                <strong>Gender-Neutral Evaluation:</strong> All model responses (model_answer) were verified to contain no gendered pronouns before evaluation. Model responses always contain only second-person pronouns (you/your). The LLM judge is never exposed to gender cues present only in the speech prompt that could influence scoring.
+                                <strong>Gender-Neutral Evaluation:</strong> All model responses (model_answer) were verified to contain no gendered pronouns before evaluation. The LLM judge is also never exposed to gender cues (that are present only in the input speech prompt) that could influence scoring and only has access to the speechLLM response and task type. It is asked to score based solely on the content of the response.
                             </div>
                         </div>
                     </div>
